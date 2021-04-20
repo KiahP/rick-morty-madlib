@@ -1,4 +1,25 @@
-.h1{
-    font-family: 'Courier New', Courier, monospace;
+
+body{
+    text-align: center;
 }
+
+/* title of the page */
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* controls the css for the image */
+.headerimg{
+    border-radius: 60%;
+}
+
+#answer{
+    width:auto;
+    height: 200px;
+}
+
+
+
+/* media queries */
 
