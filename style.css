@@ -6,25 +6,48 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color:#D6D3D0;
+}
+
 
 /* styling for the header  */
 .pickle{
+    background-image: url(./images/pickle.gif);
+    height: 70vh;
+    position: relative;
+    
+    
+}
 
-    background-color: #5AFF15;
-    font-size: 30px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.headerintro {
+    background-color: #d6d3d0;
+    width:40%;
+    height: 90%;
+    position:absolute;
+    left: 80rem;
+    top: 3rem;
+    border-radius: 2rem;
+   
+   
 }
 
 /* style of title */
 .rickety {
    font-family: 'Ubuntu', sans-serif;
-   font-size: 2.5em;
-   padding-bottom: 50px;
-   padding-top:25px ;
+   font-size: 3.5rem;
+   margin-bottom: 2.5rem;
+   text-align: center;
 }
 
 .wrecked{
@@ -38,27 +61,27 @@
 img {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    height: 450px;
-    width: 640px;
+    height: 45rem;
+    width: 64rem;
 }
 /* style of first paragraph */
 p {
     font-family: 'Poppins', sans-serif;
-    text-align: justify; 
-    display: inline-block; 
+    
+    
 }
 
 .p1{
-    font-size: .7em;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 2rem;
+   
 }
 
 /* style of second paragraph */  
 .p2{
-   font-size: .5em;
+   font-size: 1.5rem;
+   padding: 2rem;
 }
 
 
@@ -71,30 +94,30 @@ p {
 /* styling for form */
 
 .form-section{
-   background-color: #AAFFE5; 
-   
-   height:1100px;
+   height:110rem;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 .form{
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    width:500px;
-    height:900px;
-    margin-top:100px ;
+    background-color: #D6D3D0;
+    width:50rem;
+    height:90rem;
+    margin-top:10rem ;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: baseline;
+    text-align: left;
     border-radius: 25%;
+    font-size: 1.8rem;
 
 }
 
 .btn{
-    width: 110px;
-    height: 50px;
+    width: 11rem;
+    height: 5rem;
+    
 }
 
 
@@ -105,9 +128,9 @@ p {
 /* styling for the story */
 
 .story{
-    background-color:#5AFF15 ;
+   
     
-    height:700px;
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,14 +140,13 @@ p {
 
 #answer{
     font-family: 'Roboto', sans-serif;
-    font-weight: 20px;
-    text-align: right;
-    height: 380px;
-    width: 800px;
-    border:10px solid #8C1A6A ;
-    margin: 10px;
-    padding: 20px;
-    font-size: 1.5em;
+    font-weight: 2rem;
+    text-align:justify;
+    height: 100%;
+    width: 80rem;
+    margin: 1rem;
+    padding: 2rem;
+    font-size:2.8rem;
 
 }
 
@@ -134,17 +156,15 @@ p {
 /* mobile device screens iphone & android */
 @media only screen and (max-width: 600px){
 	.pickle{
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     img {
-        height: 225px;
-        width:320px;
+        height: 22.5rem;
+        width:32rem;
     }
 
-   
-
     #answer{
-        font-size: .9em;
+        font-size: 1.5rem;
     }
 }
